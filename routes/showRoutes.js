@@ -7,5 +7,5 @@ const {
 const router = express.Router();
 router.post("/createShow", createShow);
 router.put("/updateShow/:id", updateShow);
-router.post("/deleteShow", deleteShow);
+router.delete("/deleteShow/:id", deleteShow); 
 module.exports = router;

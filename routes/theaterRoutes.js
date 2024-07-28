@@ -1,5 +1,5 @@
 const express = require('express');
-const {registerT}=require('../models/theater');
+const { register } = require('../controllers/theaterController');
 const router = express.Router();
-router.post('/NewTheatre',registerT);
-module.exports=router
+router.post('/newTheatre', register); 
+module.exports = router;

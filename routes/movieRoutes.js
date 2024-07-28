@@ -1,11 +1,11 @@
 const express = require('express');
 const {
-    addMovie,
+  addMovie,
   updateMovie,
   deleteMovie
-}=require('../controllers/moviecontroller');
+} = require('../controllers/moviecontroller');
 const router = express.Router();
-router.post('/createmovie',addMovie);
-router.put('/updatemovie',updateMovie);
-router.post('/deleteMovie',deleteMovie);
-module.exports=router;
+router.post('/createMovie', addMovie); 
+router.put('/updateMovie/:id', updateMovie);
+router.delete('/deleteMovie/:id', deleteMovie); 
+module.exports = router;
