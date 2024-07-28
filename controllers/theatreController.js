@@ -13,7 +13,7 @@ const register = async (req, res) => {
       seatingArrangement,
     });
 
-    res.status(201).json(theatreDoc); // Use status 201 for created resource
+    res.status(201).json(theatreDoc); 
   } catch (err) {
     console.error("Error registering theatre", err);
     res.status(500).json({ message: "Error registering theatre", error: err.message });
