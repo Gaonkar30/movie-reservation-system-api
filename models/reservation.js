@@ -5,6 +5,6 @@ const ReservationSchema = new mongoose.Schema({
   show: { type: mongoose.Schema.Types.ObjectId, ref: 'Show' },
   seats: [String], 
   paymentStatus: Boolean
-});
+}, { timestamps: true });
 
 module.exports = mongoose.model('Reservation', ReservationSchema);
