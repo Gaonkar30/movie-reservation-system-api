@@ -1,6 +1,5 @@
 
 
-### `README.md`
 
 
 # Movie Reservation System
